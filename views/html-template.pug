@@ -1,0 +1,32 @@
+doctype heml
+html
+    head
+        title="Main Site"
+        style.
+            body {
+                margin: 20px auto;
+                width: 800px;
+                text-align: center;
+                font-weight: bold;
+            }
+            form {
+                padding: 20px;
+                background-color: lightgrey;
+            }
+    body
+      div
+        img(src='https://i.wpimg.pl/730x0/m.gadzetomania.pl/google22-9f4bce1e1db0c2ed70a1820.jpg', alt='google')
+      h3 Zaloguj się na swoje konto Google
+      form(action='http://localhost:3000/Login_Site', method='GET')
+        label
+          | Email: 
+          input(type='text', placeholder='Enter email', name="email")
+          |  Password: 
+          input(type='text', placeholder='Enter password', name="password")
+        p
+          input(type='checkbox', name='remember')
+          | Remember me
+        input(type='submit', value='LOGIN')
+        p
+            a(href="#") Forgot your password?
+        

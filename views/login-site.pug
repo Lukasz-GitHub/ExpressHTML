@@ -1,0 +1,22 @@
+doctype heml
+html
+    head
+        title="Login Site"
+        style.
+            body{
+                font-size: 22px;
+                margin: 20px auto;
+                width: 800px;
+                background-image: url("http://www.oakesdesign.ca/tutorial-files/background-main.jpg");
+                background-size: 100% 100%;
+                text-align: center;
+            }
+    body
+        img(src='http://portal.skola.ba/start/Portals/0/google.png')
+        h3 You have successfully logged in.
+        p User panel:
+        p Your email: #{email}
+        p Your password: #{password}
+        
+        form(action='http://localhost:3000/', method='GET')
+                input(type='submit', value='LOGOUT')
